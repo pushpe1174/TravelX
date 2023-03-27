@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#nav{
+    background:#2d3436;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    z-index: 99;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav-bar{
+    list-style: none;
+    display: flex;
+}
+
+.nav-items{
+    padding-right: 60px;
+    font-size: 1.3em;
+    position: relative;
+
+}
+.nav-items a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+.nav-items a:hover,
+.nav-items .active{
+    color: #55efc4;
+}
+.nav-items a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 8%;
+}
+.nav-items .active::after,
+.nav-items a:hover::after{
+    width: 30%;
+    background-color: #55efc4;
+    transition: 0.9s ease;
+    border-radius: 20px;
+}
+
+#logo-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7em;
+}
+
+#nav .nav-btn{
+    font-size: 1.3em;
+    padding: 8px 10px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    background-color: #2d3436;
+    border: 2px solid #636e72;
+    color: #dfe6e9;
+}
+
+#nav .nav-btn:hover{
+    border-color: #55efc4;
+    color: #55efc4;
+}

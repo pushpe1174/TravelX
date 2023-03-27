@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.col-12 #topic-title {
+    font-size: 30px;
+    color: #3A393E;
+    text-align: center;
+    margin: 2vh 0 2vh 35%;
+    padding: 15px 15px 10px 90px;
+    height: 50px;
+    width: 320px;
+    display: flex;
+    background: snow;
+    border-radius: 25px;
+    box-shadow: 10px 20px 25px 0 rgba(0,0,0,0.7);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1540px;
+    width: 100vw;
+    height: 100vh;
+    background: #353b48;
+    margin: 0 auto;
+}
+.client-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid snow;
+    padding: 5px;
+}
+.img-fluid {
+    height: 165px;
+    width: 150px;
+    object-fit: scale-down;
+}
+.box-bg {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    padding: 60px 15px;
+    border: 4px solid #e2e2e2;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+    margin: 30px 1vh 1vh 2vh;
+    overflow: hidden;
+    width: 300px;
+    min-height: 300px;
+    box-shadow: 10px 20px 30px 0 rgba(0,0,0,1);
+}
+.box-bg:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.details {
+    padding: 10px 0;
+    text-align: center;
+}
+.details h2,
+.details h3,
+.details h4 {
+    color: snow;
+}
+.details a {
+    margin: 0 auto;
+    font-size: 16px;
+    color: #607D8B;
+    text-decoration: none;
+    font-weight: 500;
+    display: table;
+}
+.item-container {
+    display: flex;
+}
+table {
+    margin-left: 55px;
+    margin-top: 0;
+    font-size: 18px;
+    color: snow;
+    text-align: left;
+}
