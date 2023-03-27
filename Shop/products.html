@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Now</title>
+    <link rel="stylesheet" type="text/css" href="css/products_style.css">
+    <link rel="stylesheet" href="../Nav-bar/nav-style.css">
+    <script src="https://kit.fontawesome.com/9a6b3796f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div id="nav">
+        <span id="logo-name"><i class="fa-solid fa-meteor"></i></span>
+        <ul id="nav-bar">
+            <li class="nav-items"><a href="../HomePage/index.html">Home</a></li>
+            <li class="nav-items"><a href="../Quizrules/index.html">Quiz</a></li>
+            <li class="nav-items"><a href="../Showcase/CourseWork.html">ShowCase</a></li>
+            <li class="nav-items"><a href="../Query/Query-main.html">Query</a></li>
+            <li class="nav-items"><a href="../About/index.html">AboutUs</a></li>
+            <li class="nav-items"><a href="../SiteMap/Sitemap.html">SiteMap</a></li>
+        </ul>
+        <span>
+            <span class='badge badge-notify' id='lblCartCount'></span>
+            <img src="images/icons/bag.png" alt="cart icon" class="cart_icon" id="cart_icon">
+        </span>
+    </div>
+    <div class="container">
+        <div class="product-header">Adventure Now</div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/products/shoe.png" class="product_image" id="product_image" alt="">
+                <h2 class="product_name">Nike Shoes</h2>
+                <h3 class="price_tag" id="price">$79.09</h3>
+            </div>
+            <div class="content">
+                <div class="color">
+                    <h3>Colour: </h3>
+                    <label for="product_colour_1">
+                        <input type="radio" class="product_color" id="product_colour_1" name="product_1_color">
+                    </label>
+                    <label for="product_colour_2">
+                        <input type="radio" class="product_color" id="product_colour_2" name="product_1_color">
+                    </label>
+                    <label for="product_colour_3">
+                        <input type="radio" class="product_color" id="product_colour_3" name="product_1_color">
+                    </label>
+                </div>
+                <div class="size">
+                    <h3>Size: </h3>
+                    <label for="shoe_size_1">
+                        <input type="radio" class="size_value" id="shoe_size_1" name="product_1" value="7">7
+                    </label>
+                    <label for="shoe_size_2">
+                        <input type="radio" class="size_value" id="shoe_size_2" name="product_1" value="8">8
+                    </label>
+                    <label for="shoe_size_3">
+                        <input type="radio" class="size_value" id="shoe_size_3" name="product_1" value="9">9
+                    </label>
+                    <label for="shoe_size_4">
+                        <input type="radio" class="size_value" id="shoe_size_4" name="product_1" value="10">10
+                    </label>
+                </div>
+                <div class="quantity">
+                    <button class="plus-btn_general" type="button" name="button" id="plus-btn_p1">+</button>
+                    <label>
+                        <input type="text" class="quantity_value" id="quantity_value_p1" value="1" readonly>
+                    </label>
+                    <button class="minus-btn_general" type="button" name="button" id="minus-btn_p1">-</button>
+                </div>
+                <a class="cart_button" id="cart_product_1">Add to Cart</a>
+                <a class="usage_button" id="usage_product_1" href="details-page/index.html">View Usage</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img class="product_image" id="product_image_backpack" alt="" src="images/products/backpack.png">
+                <h2 class="product_name">Backpack</h2>
+                <h3 class="price_tag" id="price_backpack">$59.99</h3>
+            </div>
+            <div class="content">
+                <div class="color">
+                    <h3>Colour: </h3>
+                    <label for="backpack_colour_1">
+                        <input type="radio" class="product_color" id="backpack_colour_1" name="product_2_color">
+                    </label>
+                </div>
+                <div class="size">
+                    <h3>Size: </h3>
+                    <label for="backpack_size_1">
+                        <input type="radio" class="size_value" id="backpack_size_1" name="product_2" value="s">S
+                    </label>
+                    <label for="backpack_size_2">
+                        <input type="radio" class="size_value" id="backpack_size_2" name="product_2" value="m">M
+                    </label>
+                    <label for="backpack_size_3">
+                        <input type="radio" class="size_value" id="backpack_size_3" name="product_2" value="l">L
+                    </label>
+                </div>
+                <div class="quantity">
+                    <button class="plus-btn_general" type="button" name="button" id="plus-btn_p2">+</button>
+                    <label>
+                        <input type="text" class="quantity_value" id="quantity_value_p2" value="1" readonly>
+                    </label>
+                    <button class="minus-btn_general" type="button" name="button" id="minus-btn_p2">-</button>
+                </div>
+                <a class="cart_button" id="cart_product_2">Add to Cart</a>
+                <a class="usage_button" id="usage_product_2" href="details-page/index.html">View Usage</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img class="product_image" id="shelter_image" alt="" src="images/products/emergency_shelter.png">
+                <h2 class="product_name">Emergency Shelter</h2>
+                <h3 id="shelter_price" class="price_tag">$19.95</h3>
+            </div>
+            <div class="content">
+                <div class="color">
+                    <h3>Colour: </h3>
+                    <label for="shelter_colour_1">
+                        <input type="radio" class="product_color" id="shelter_colour_1" name="product_3_color">
+                    </label>
+                    <label for="shelter_colour_2">
+                        <input type="radio" class="product_color" id="shelter_colour_2" name="product_3_color">
+                    </label>
+                </div>
+                <div class="size">
+                    <h3>Size: </h3>
+                    <label for="shelter_size_3">
+                        <input type="radio" class="size_value" id="shelter_size_3" name="product_3" value="l">L
+                    </label>
+                </div>
+                <div class="quantity">
+                    <button class="plus-btn_general" type="button" name="button" id="plus-btn_p3">+</button>
+                    <label>
+                        <input type="text" class="quantity_value" id="quantity_value_p3" value="1" readonly>
+                    </label>
+                    <button class="minus-btn_general" type="button" name="button" id="minus-btn_p3">-</button>
+                </div>
+                <a class="cart_button" id="cart_product_3">Add to Cart</a>
+                <a class="usage_button" id="usage_product_3" href="details-page/index.html">View Usage</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img class="product_image" id="compass_image" alt="" src="images/products/compass.png">
+                <h2 class="product_name">Compass</h2>
+                <h3 id="compass_price" class="price_tag">$27.89</h3>
+            </div>
+            <div class="content">
+                <div class="color">
+                    <h3>Colour: </h3>
+                    <label for="compass_colour_1">
+                        <input type="radio" class="product_color" id="compass_colour_1" name="product_4_color">
+                    </label>
+                </div>
+                <div class="size">
+                    <h3>Size: </h3>
+                    <label for="compass_type_1">
+                        <input type="radio" class="size_value" id="compass_type_1" name="product_4" value="8">8
+                    </label>
+                    <label for="compass_type_2">
+                        <input type="radio" class="size_value" id="compass_type_2" name="product_4" value="9">9
+                    </label>
+                    <label for="compass_type_3">
+                        <input type="radio" class="size_value" id="compass_type_3" name="product_4" value="10">10
+                    </label>
+                </div>
+                <div class="quantity">
+                    <button class="plus-btn_general" type="button" name="button" id="plus-btn_p4">+</button>
+                    <label>
+                        <input type="text" class="quantity_value" id="quantity_value_p4" value="1" readonly>
+                    </label>
+                    <button class="minus-btn_general" type="button" name="button" id="minus-btn_p4">-</button>
+                </div>
+                <a class="cart_button" id="cart_product_p4">Add to Cart</a>
+                <a class="usage_button" id="usage_product_4" href="details-page/index.html">View Usage</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img class="product_image" id="first_aid_image" alt="" src="images/products/first_aid.png">
+                <h2 class="product_name">First Aid Kit</h2>
+                <h3 id="first_aid_price" class="price_tag">$29.99</h3>
+            </div>
+            <div class="content">
+                <div class="color">
+                    <h3>Colour: </h3>
+                    <label for="first_aid_colour_1">
+                        <input type="radio" class="product_color" id="first_aid_colour_1" name="product_5_color">
+                    </label>
+                </div>
+                <div class="size">
+                    <h3>Size: </h3>
+                    <label for="first_aid_size_1">
+                        <input type="radio" class="size_value" id="first_aid_size_1" name="product_5" value="m">M
+                    </label>
+                    <label for="first_aid_size_2">
+                        <input type="radio" class="size_value" id="first_aid_size_2" name="product_5" value="l">L
+                    </label>
+                </div>
+                <div class="quantity">
+                    <button class="plus-btn_general" type="button" name="button" id="plus-btn_p5">+</button>
+                    <label>
+                        <input type="text" class="quantity_value" id="quantity_value_p5" value="1" readonly>
+                    </label>
+                    <button class="minus-btn_general" type="button" name="button" id="minus-btn_p5">-</button>
+                </div>
+                <a class="cart_button" id="cart_product_p5">Add to Cart</a>
+                <a class="usage_button" id="usage_product_5" href="details-page/index.html">View Usage</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img class="product_image" id="gloves_image" alt="" src="images/products/gloves.png">
+                <h2 class="product_name">Gloves</h2>
+                <h3 id="gloves_price" class="price_tag">$17.99</h3>
+            </div>
+            <div class="content">
+                <div class="color">
+                    <h3>Colour: </h3>
+                    <label for="gloves_colour_1">
+                        <input type="radio" class="product_color" id="gloves_colour_1" name="product_6_color">
+                    </label>
+                    <label for="gloves_colour_2">
+                        <input type="radio" class="product_color" id="gloves_colour_2" name="product_6_color">
+                    </label>
+                </div>
+                <div class="size">
+                    <h3>Size: </h3>
+                    <label for="gloves_size_1">
+                        <input type="radio" class="size_value" id="gloves_size_1" name="product_6" value="s">S
+                    </label>
+                    <label for="gloves_size_2">
+                        <input type="radio" class="size_value" id="gloves_size_2" name="product_6" value="m">M
+                    </label>
+                    <label for="gloves_size_3">
+                        <input type="radio" class="size_value" id="gloves_size_3" name="product_6" value="l">L
+                    </label>
+                </div>
+                <div class="quantity">
+                    <button class="plus-btn_general" type="button" name="button" id="plus-btn_p6">+</button>
+                    <label>
+                        <input type="text" class="quantity_value" id="quantity_value_p6" value="1" readonly>
+                    </label>
+                    <button class="minus-btn_general" type="button" name="button" id="minus-btn_p6">-</button>
+                </div>
+                <a class="cart_button" id="cart_product_p6">Add to Cart</a>
+                <a class="usage_button" id="usage_product_6" href="details-page/index.html">View Usage</a>
+            </div>
+        </div>
+        <div class="editor-container">
+            <a href="editor-page-jerrick/Editor-index.html">Editor</a>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+</div>
+<div class="wrapper-content">
+    <div class="side-bar" id="side-bar">
+        <div class="parent-div-class">
+            <div class="title">Shopping Bag</div>
+            <div class="shopping-cart" id="cart_menu"></div>
+            <div class="grand-total" id="net-value">
+                <div class="total-label">Total Payable (Tax exclusive):</div>
+                <div class="total-payable"></div>
+            </div>
+        </div>
+        <div class="order-summary">
+            <form class="user-form">
+                <div class="user-data">
+                    <div class="full-name">
+                        <p>Contact Information</p>
+                        <label for="first-name">
+                            <input type="text" class="personal-data" id="first-name" placeholder="First name*">
+                        </label>
+                        <label for="last-name">
+                            <input type="text" class="personal-data" id="last-name" placeholder="Last name*">
+                        </label>
+                    </div>
+                    <div class="section-email-address">
+                        <label for="email-address">
+                            <input type="email" class="user-data" id="email-address" placeholder="Email (optional)">
+                        </label>
+                    </div>
+                    <div class="section-address">
+                        <p id="user-address">Shipping Address</p>
+                        <div>
+                            <label for="customer-address">
+                                <textarea class="personal-data" id="customer-address" placeholder="Address*"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="customer-apartment">
+                                <input type="text" class="user-data" id="customer-apartment" placeholder="Apartment, suit, unit (optional)">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="customer-city">
+                                <input type="text" class="personal-data" id="customer-city" placeholder="City*">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="customer-country">
+                                <input type="text" class="personal-data" id="customer-country" placeholder="Country*">
+                            </label>
+                            <label for="customer-postcode">
+                                <input type="number" class="personal-data" id="customer-postcode" min="0" placeholder="Post code*">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <label for="customer-contact">
+                            <input type="tel" class="user-data" id="customer-contact" placeholder="Phone (optional)">
+                        </label>
+                    </div>
+                </div>
+                <div class="verify">
+                    <label for="acknowledge">
+                        <input type="checkbox" class="personal-data" id="acknowledge" >
+                        <span>I acknowledge that I am above age of 18<strong> *</strong></span>
+                    </label>
+                </div>
+                <div class="trigger">
+                    <div class="section-trigger">
+                        <input type="reset" class="reset-button" id="reset-trigger" value="Clear">
+                        <input type="submit" class="submit-button" id="submit-trigger" value="Place Order">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="order-receipt">
+        <div class="self-parent">
+            <div class="card">
+                <div class="cart-parent"><i class="checkmark">✓</i></div>
+                <h1>Thank You!<br>We've received your order</h1>
+            </div>
+            <div class="content"><hr>
+                <div class="order-summary-receipt">
+                    <div class="customer-parent">
+                        <table class="customer-details">
+                            <tr>
+                                <td class="tag-title">Customer: </td>
+                                <td class="customer-data" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td class="tag-title">Address: </td>
+                                <td class="customer-data" id="address"></td>
+                            </tr>
+                            <tr>
+                                <td class="tag-title">City: </td>
+                                <td class="customer-data" id="city"></td>
+                            </tr>
+                            <tr>
+                                <td class="tag-title">Country: </td>
+                                <td class="customer-data" id="country"></td>
+                            </tr>
+                            <tr>
+                                <td class="tag-title">Post Code: </td>
+                                <td class="customer-data" id="postcode"></td>
+                            </tr>
+                        </table>
+                    </div><hr>
+                    <h3>Order Summary</h3>
+                    <div class="summary-container"></div>
+                </div>
+                <div class="footer-panel">
+                    <div class="grand-total-receipt">Total: </div>
+                    <div class="tax-amount">(Tax Exclusive)</div>
+                </div>
+                <div class="class-parent-redirect">Continue</div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="script/products.js"></script>
+<script src="../Nav-bar/nav-script.js"></script>
+</body>
+</html>
